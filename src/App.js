@@ -1,16 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Home from './chat/Home';
-import Contact from './chat/Contact';
-import Message from './chat/Message';
+import Home from "./chat/Home";
+import Contact from "./chat/Contact";
+import Message from "./chat/Message";
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   return (
     <Router>
-      <Route path="/" component={Home}></Route>
-      <Route path="message" component={Message}></Route>
-      <Route path="contact" component={Contact}></Route>
+      <Route exact path="/" component={Home}></Route>
+      <Route exact path="message" component={Message}></Route>
+      <Route exact path="contact" component={Contact}></Route>
     </Router>
   );
 }
