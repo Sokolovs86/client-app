@@ -8,15 +8,12 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 const App = () => {
    return (
-     <div>
        <Router>
          <Route path="/" exact component={Home} />
          <Route path="/message" component={Message} />
          <Route path="/contact" component={Contact} />
        </Router>
-     </div>
    );
-  
 }
 
 export default App;
